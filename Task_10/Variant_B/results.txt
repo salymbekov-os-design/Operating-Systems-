@@ -1,0 +1,42 @@
+===== TLB TEST =====
+1200: MISS | Physical: 2224
+3100: MISS | Physical: 28
+5000: MISS | Page not present
+100: MISS | Physical: 5220
+1500: MISS | Physical: 2524
+2500: MISS | Physical: 7620
+3500: MISS | Physical: 428
+1200: MISS | Physical: 2224
+1500: HIT | Physical: 2524
+2500: MISS | Physical: 7620
+Hits: 1
+Misses: 9
+Hit rate: 10.00%
+Valid address hit rate: 11.11%
+Estimated access time: 198.89 ns
+
+===== EFFECTIVE ACCESS TIME =====
+Hit rate: 0% | Time: 210.00 ns
+Hit rate: 25% | Time: 185.00 ns
+Hit rate: 50% | Time: 160.00 ns
+Hit rate: 75% | Time: 135.00 ns
+Hit rate: 90% | Time: 120.00 ns
+Hit rate: 100% | Time: 110.00 ns
+
+===== TLB SIZE COMPARISON =====
+TLB size: 1 | Hit rate: 34.17%
+TLB size: 2 | Hit rate: 65.86%
+TLB size: 3 | Hit rate: 86.98%
+TLB size: 4 | Hit rate: 99.96%
+TLB size: 8 | Hit rate: 99.96%
+TLB size: 16 | Hit rate: 99.96%
+
+===== TWO-LEVEL PAGE TABLE =====
+Virtual address: 1200
+Level 1 index: 0
+Level 2 index: 1
+Physical frame: 2
+Physical address: 2224
+Memory accesses for translation: 2
+Memory accesses including data: 3
+Total access time without TLB: 300 ns

@@ -1,0 +1,59 @@
+Virtual address: 1200
+Page: 1
+Offset: 176
+Frame: 2
+Physical address: 2224
+
+Virtual address: 3100
+Page: 3
+Offset: 28
+Frame: 0
+Physical address: 28
+
+Virtual address: 5000
+Page: 4
+Offset: 904
+Page not present
+
+Virtual address: 100
+Page: 0
+Offset: 100
+Frame: 5
+Physical address: 5220
+
+Virtual address: 1500
+Page: 1
+Offset: 476
+Frame: 2
+Physical address: 2524
+
+Virtual address: 2500
+Page: 2
+Offset: 452
+Frame: 7
+Physical address: 7620
+
+Virtual address: 3500
+Page: 3
+Offset: 428
+Frame: 0
+Physical address: 428
+
+Virtual address: 1200
+Page: 1
+Offset: 176
+Frame: 2
+Physical address: 2224
+
+Virtual address: 1500
+Page: 1
+Offset: 476
+Frame: 2
+Physical address: 2524
+
+Virtual address: 2500
+Page: 2
+Offset: 452
+Frame: 7
+Physical address: 7620
+
