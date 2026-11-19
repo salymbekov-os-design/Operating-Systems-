@@ -1,0 +1,5 @@
+Strategy,Failures,External,Internal
+first_fit,0,14.66,0.00
+best_fit,0,14.66,0.00
+worst_fit,0,18.88,0.00
+buddy,0,30.56,29.56

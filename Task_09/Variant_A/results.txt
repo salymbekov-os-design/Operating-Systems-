@@ -1,0 +1,87 @@
+
+===== FIRST_FIT =====
+
+Operation: alloc A 20
+[A: 0, size=20] [FREE: 20, size=80] 
+
+Operation: alloc B 30
+[A: 0, size=20] [B: 20, size=30] [FREE: 50, size=50] 
+
+Operation: alloc C 20
+[A: 0, size=20] [B: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: free B 0
+[A: 0, size=20] [FREE: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc D 15
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc E 25
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: free A 0
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: alloc F 30
+Allocation failed: F (30)
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+===== BEST_FIT =====
+
+Operation: alloc A 20
+[A: 0, size=20] [FREE: 20, size=80] 
+
+Operation: alloc B 30
+[A: 0, size=20] [B: 20, size=30] [FREE: 50, size=50] 
+
+Operation: alloc C 20
+[A: 0, size=20] [B: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: free B 0
+[A: 0, size=20] [FREE: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc D 15
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc E 25
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: free A 0
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: alloc F 30
+Allocation failed: F (30)
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+===== WORST_FIT =====
+
+Operation: alloc A 20
+[A: 0, size=20] [FREE: 20, size=80] 
+
+Operation: alloc B 30
+[A: 0, size=20] [B: 20, size=30] [FREE: 50, size=50] 
+
+Operation: alloc C 20
+[A: 0, size=20] [B: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: free B 0
+[A: 0, size=20] [FREE: 20, size=30] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc D 15
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [FREE: 70, size=30] 
+
+Operation: alloc E 25
+[A: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: free A 0
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+Operation: alloc F 30
+Allocation failed: F (30)
+[FREE: 0, size=20] [D: 20, size=15] [FREE: 35, size=15] [C: 50, size=20] [E: 70, size=25] [FREE: 95, size=5] 
+
+===== FINAL RESULTS =====
+Strategy        Free       Largest    Fragmentation
+first_fit       40         20         50.00%
+best_fit        40         20         50.00%
+worst_fit       40         20         50.00%

@@ -1,0 +1,237 @@
+
+===== first_fit =====
+
+Operation: alloc A 20
+[A:20] [FREE:108]
+
+Operation: alloc B 12
+[A:20] [B:12] [FREE:96]
+
+Operation: alloc C 25
+[A:20] [B:12] [C:25] [FREE:71]
+
+Operation: alloc D 10
+[A:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free A 0
+[FREE:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free B 0
+Free blocks merged
+[FREE:32] [C:25] [D:10] [FREE:61]
+
+Operation: alloc E 30
+[E:30] [FREE:2] [C:25] [D:10] [FREE:61]
+
+Operation: free C 0
+Free blocks merged
+[E:30] [FREE:27] [D:10] [FREE:61]
+
+Operation: alloc F 18
+[E:30] [F:18] [FREE:9] [D:10] [FREE:61]
+
+Operation: free D 0
+Free blocks merged
+Free blocks merged
+[E:30] [F:18] [FREE:80]
+
+Operation: free E 0
+[FREE:30] [F:18] [FREE:80]
+
+Operation: alloc G 40
+[FREE:30] [F:18] [G:40] [FREE:40]
+
+===== best_fit =====
+
+Operation: alloc A 20
+[A:20] [FREE:108]
+
+Operation: alloc B 12
+[A:20] [B:12] [FREE:96]
+
+Operation: alloc C 25
+[A:20] [B:12] [C:25] [FREE:71]
+
+Operation: alloc D 10
+[A:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free A 0
+[FREE:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free B 0
+Free blocks merged
+[FREE:32] [C:25] [D:10] [FREE:61]
+
+Operation: alloc E 30
+[E:30] [FREE:2] [C:25] [D:10] [FREE:61]
+
+Operation: free C 0
+Free blocks merged
+[E:30] [FREE:27] [D:10] [FREE:61]
+
+Operation: alloc F 18
+[E:30] [F:18] [FREE:9] [D:10] [FREE:61]
+
+Operation: free D 0
+Free blocks merged
+Free blocks merged
+[E:30] [F:18] [FREE:80]
+
+Operation: free E 0
+[FREE:30] [F:18] [FREE:80]
+
+Operation: alloc G 40
+[FREE:30] [F:18] [G:40] [FREE:40]
+
+===== worst_fit =====
+
+Operation: alloc A 20
+[A:20] [FREE:108]
+
+Operation: alloc B 12
+[A:20] [B:12] [FREE:96]
+
+Operation: alloc C 25
+[A:20] [B:12] [C:25] [FREE:71]
+
+Operation: alloc D 10
+[A:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free A 0
+[FREE:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free B 0
+Free blocks merged
+[FREE:32] [C:25] [D:10] [FREE:61]
+
+Operation: alloc E 30
+[FREE:32] [C:25] [D:10] [E:30] [FREE:31]
+
+Operation: free C 0
+Free blocks merged
+[FREE:57] [D:10] [E:30] [FREE:31]
+
+Operation: alloc F 18
+[F:18] [FREE:39] [D:10] [E:30] [FREE:31]
+
+Operation: free D 0
+Free blocks merged
+[F:18] [FREE:49] [E:30] [FREE:31]
+
+Operation: free E 0
+Free blocks merged
+Free blocks merged
+[F:18] [FREE:110]
+
+Operation: alloc G 40
+[F:18] [G:40] [FREE:70]
+
+===== buddy =====
+
+Operation: alloc A 20
+Split 128 into 64 + 64
+Split 64 into 32 + 32
+[A:32] [FREE:32] [FREE:64]
+
+Operation: alloc B 12
+Split 32 into 16 + 16
+[A:32] [B:16] [FREE:16] [FREE:64]
+
+Operation: alloc C 25
+Split 64 into 32 + 32
+[A:32] [B:16] [FREE:16] [C:32] [FREE:32]
+
+Operation: alloc D 10
+[A:32] [B:16] [D:16] [C:32] [FREE:32]
+
+Operation: free A 0
+[FREE:32] [B:16] [D:16] [C:32] [FREE:32]
+
+Operation: free B 0
+[FREE:32] [FREE:16] [D:16] [C:32] [FREE:32]
+
+Operation: alloc E 30
+[E:32] [FREE:16] [D:16] [C:32] [FREE:32]
+
+Operation: free C 0
+Buddies merged into 64
+[E:32] [FREE:16] [D:16] [FREE:64]
+
+Operation: alloc F 18
+Split 64 into 32 + 32
+[E:32] [FREE:16] [D:16] [F:32] [FREE:32]
+
+Operation: free D 0
+Buddies merged into 32
+[E:32] [FREE:32] [F:32] [FREE:32]
+
+Operation: free E 0
+Buddies merged into 64
+[FREE:64] [F:32] [FREE:32]
+
+Operation: alloc G 40
+[G:64] [F:32] [FREE:32]
+
+===== First Fit without coalescing =====
+
+Operation: alloc A 20
+[A:20] [FREE:108]
+
+Operation: alloc B 12
+[A:20] [B:12] [FREE:96]
+
+Operation: alloc C 25
+[A:20] [B:12] [C:25] [FREE:71]
+
+Operation: alloc D 10
+[A:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free A 0
+[FREE:20] [B:12] [C:25] [D:10] [FREE:61]
+
+Operation: free B 0
+[FREE:20] [FREE:12] [C:25] [D:10] [FREE:61]
+
+Operation: alloc E 30
+[FREE:20] [FREE:12] [C:25] [D:10] [E:30] [FREE:31]
+
+Operation: free C 0
+[FREE:20] [FREE:12] [FREE:25] [D:10] [E:30] [FREE:31]
+
+Operation: alloc F 18
+[F:18] [FREE:2] [FREE:12] [FREE:25] [D:10] [E:30] [FREE:31]
+
+Operation: free D 0
+[F:18] [FREE:2] [FREE:12] [FREE:25] [FREE:10] [E:30] [FREE:31]
+
+Operation: free E 0
+[F:18] [FREE:2] [FREE:12] [FREE:25] [FREE:10] [FREE:30] [FREE:31]
+
+Operation: alloc G 40
+Allocation failed: G
+[F:18] [FREE:2] [FREE:12] [FREE:25] [FREE:10] [FREE:30] [FREE:31]
+
+===== COMPARISON =====
+
+Strategy: first_fit
+Failures: 0
+Average external fragmentation: 14.66%
+Average internal fragmentation: 0.00%
+
+Strategy: best_fit
+Failures: 0
+Average external fragmentation: 14.66%
+Average internal fragmentation: 0.00%
+
+Strategy: worst_fit
+Failures: 0
+Average external fragmentation: 18.88%
+Average internal fragmentation: 0.00%
+
+Strategy: buddy
+Failures: 0
+Average external fragmentation: 30.56%
+Average internal fragmentation: 29.56%
+
+===== WITHOUT COALESCING =====
+('First Fit without coalescing', 1, 36.27224896602137, 0.0)
