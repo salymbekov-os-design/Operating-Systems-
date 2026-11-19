@@ -1,0 +1,69 @@
+
+Allocator: first
+Scenario: 1
+Internal fragmentation: 0.00%
+External fragmentation: 0.00%
+Total time: 0.202999 seconds
+Peak RSS: 2456 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: best
+Scenario: 1
+Internal fragmentation: 0.00%
+External fragmentation: 0.00%
+Total time: 0.179473 seconds
+Peak RSS: 2464 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: glibc
+Scenario: 1
+Internal fragmentation: 20.00%
+External fragmentation: unavailable
+Total time: 0.000339 seconds
+Peak RSS: 2212 KB
+
+Allocator: first
+Scenario: 2
+Internal fragmentation: 0.85%
+External fragmentation: 0.02%
+Total time: 0.396571 seconds
+Peak RSS: 4556 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: best
+Scenario: 2
+Internal fragmentation: 0.60%
+External fragmentation: 0.01%
+Total time: 0.372768 seconds
+Peak RSS: 4512 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: glibc
+Scenario: 2
+Internal fragmentation: 1.45%
+External fragmentation: unavailable
+Total time: 0.001277 seconds
+Peak RSS: 5440 KB
+
+Allocator: first
+Scenario: 3
+Internal fragmentation: 0.00%
+External fragmentation: 0.00%
+Total time: 2.911593 seconds
+Peak RSS: 42128 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: best
+Scenario: 3
+Internal fragmentation: 0.00%
+External fragmentation: 0.00%
+Total time: 2.755445 seconds
+Peak RSS: 42144 KB
+Memory leaks: 0 blocks, 0 bytes
+
+Allocator: glibc
+Scenario: 3
+Internal fragmentation: 0.19%
+External fragmentation: unavailable
+Total time: 0.012321 seconds
+Peak RSS: 42808 KB

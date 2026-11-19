@@ -1,0 +1,22 @@
+
+===== MEMORY MAP =====
+Block 1 | Offset: 0 | Size: 112 | USED
+Block 2 | Offset: 176 | Size: 208 | USED
+Block 3 | Offset: 448 | Size: 304 | USED
+Block 4 | Offset: 816 | Size: 67107984 | FREE
+
+===== MEMORY MAP =====
+Block 1 | Offset: 0 | Size: 384 | FREE
+Block 2 | Offset: 448 | Size: 304 | USED
+Block 3 | Offset: 816 | Size: 67107984 | FREE
+
+===== MEMORY MAP =====
+Block 1 | Offset: 0 | Size: 752 | FREE
+Block 2 | Offset: 816 | Size: 512 | USED
+Block 3 | Offset: 1392 | Size: 67107408 | FREE
+Internal fragmentation: 2.34%
+External fragmentation: 0.00%
+Memory leaks: 0 blocks, 0 bytes
+
+===== MEMORY MAP =====
+Block 1 | Offset: 0 | Size: 67108800 | FREE
