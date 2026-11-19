@@ -1,0 +1,11 @@
+
+===== ADDRESS TRANSLATION =====
+Page size: 4096 bytes
+Virtual address: 0xffffe70301e4
+Virtual page number: 68719374384
+Offset: 484
+Mapping: ffffe7010000-ffffe7031000 rw-p 00000000 00:00 0                          [stack]
+Physical frame: 1054349
+Physical address: 0x10168d1e4
+Physical address (decimal): 4318613988
+Calculation: 1054349 * 4096 + 484 = 4318613988

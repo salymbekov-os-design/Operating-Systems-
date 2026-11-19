@@ -1,0 +1,30 @@
+
+===== TLB TEST =====
+Array size: 64 MiB
+Page size: 4096 bytes
+Step: 64 bytes
+Huge pages requested: No
+Accesses: 1638400
+Time: 0.007150 seconds
+Checksum: 1638400
+AnonHugePages:         0 kB
+
+===== TLB TEST =====
+Array size: 64 MiB
+Page size: 4096 bytes
+Step: 4096 bytes
+Huge pages requested: No
+Accesses: 1638400
+Time: 0.013886 seconds
+Checksum: 1638400
+AnonHugePages:         0 kB
+
+===== TLB TEST =====
+Array size: 64 MiB
+Page size: 4096 bytes
+Step: 4096 bytes
+Huge pages requested: Yes
+Accesses: 1638400
+Time: 0.014628 seconds
+Checksum: 1638400
+AnonHugePages:     65536 kB

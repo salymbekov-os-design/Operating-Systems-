@@ -1,0 +1,9 @@
+
+===== SHARED PAGES =====
+Parent virtual address: 0xe3f404e61000
+Parent physical frame: 1128038
+Child virtual address: 0xe3f404e60000
+Child data: Shared memory
+Child physical frame: 1128038
+Both processes share the same frame
+Parent receives: Changed by child
