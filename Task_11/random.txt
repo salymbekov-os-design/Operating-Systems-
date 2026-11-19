@@ -1,0 +1,12 @@
+===== PAGE FAULT TEST =====
+Array size: 128 MiB
+Access type: Non-sequential
+Execution time: 0.028845 seconds
+
+getrusage results:
+Minor faults: 32774
+Major faults: 0
+
+/proc/self/stat results:
+Minor faults: 32776
+Major faults: 0

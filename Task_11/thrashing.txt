@@ -1,0 +1,37 @@
+Running as unit: run-p4821-i13458.scope; invocation ID: 9de0658727b042918820aeb373b4dad6
+===== THRASHING TEST =====
+Working set: 128 MiB
+
+Pass: 1
+Execution time: 3.882563 seconds
+
+getrusage results:
+Minor faults: 2
+Major faults: 32768
+
+/proc/self/stat results:
+Minor faults: 3
+Major faults: 32768
+
+Pass: 2
+Execution time: 2.755246 seconds
+
+getrusage results:
+Minor faults: 0
+Major faults: 22617
+
+/proc/self/stat results:
+Minor faults: 0
+Major faults: 22617
+
+Pass: 3
+Execution time: 2.664509 seconds
+
+getrusage results:
+Minor faults: 0
+Major faults: 22612
+
+/proc/self/stat results:
+Minor faults: 0
+Major faults: 22612
+Checksum: 98304

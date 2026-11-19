@@ -1,0 +1,37 @@
+Running as unit: run-p4773-i1320.scope; invocation ID: f893ef9e575c4efb92bda810a5968450
+===== THRASHING TEST =====
+Working set: 128 MiB
+
+Pass: 1
+Execution time: 3.882917 seconds
+
+getrusage results:
+Minor faults: 2
+Major faults: 32768
+
+/proc/self/stat results:
+Minor faults: 3
+Major faults: 32768
+
+Pass: 2
+Execution time: 0.000299 seconds
+
+getrusage results:
+Minor faults: 0
+Major faults: 0
+
+/proc/self/stat results:
+Minor faults: 0
+Major faults: 0
+
+Pass: 3
+Execution time: 0.000136 seconds
+
+getrusage results:
+Minor faults: 0
+Major faults: 0
+
+/proc/self/stat results:
+Minor faults: 0
+Major faults: 0
+Checksum: 98304

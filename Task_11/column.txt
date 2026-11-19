@@ -1,0 +1,13 @@
+===== MATRIX TEST =====
+Matrix: 4096 x 4096
+Traversal: Column
+Checksum: 16777216
+Execution time: 0.187699 seconds
+
+getrusage results:
+Minor faults: 6
+Major faults: 0
+
+/proc/self/stat results:
+Minor faults: 8
+Major faults: 0
